@@ -66,4 +66,7 @@ impl<T: frame_system::Config> frame_election_provider_support::WeightInfo for We
 			// Standard Error: 14_807_411
 			.saturating_add(Weight::from_ref_time(1_743_460_054).saturating_mul(d.into()))
 	}
+	fn vrf_solver(_: u32, _: u32, _: u32,) -> Weight {
+		Weight::from_ref_time(1 as u64)
+	}
 }
